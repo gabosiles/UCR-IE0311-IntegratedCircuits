@@ -1,0 +1,25 @@
+LTspice 24.1.6 for Windows
+Circuit: C:\users\ragnarok\Desktop\ie0311\lab03\NAND\NAND2_DELAY_C17530_sim.spi
+Start Time: Sun Jun  8 18:03:32 2025
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.108 seconds.
+
+Files loaded:
+C:\users\ragnarok\Desktop\ie0311\lab03\NAND\NAND2_DELAY_C17530_sim.spi
+Z:\home\ragnarok\Desktop\ie0311\lab02\spice.txt
+
+t_rise_fo0=7.01203383065e-11 FROM 8.30000000031e-09 TO 8.37012033862e-09
+t_fall_fo0=6.96398053838e-11 FROM 5.50000002118e-10 TO 6.19639807501e-10
+t_rise_fo4=2.36970838735e-10 FROM 8.30000000031e-09 TO 8.53697083905e-09
+t_fall_fo4=2.38055655682e-10 FROM 5.50000002118e-10 TO 7.88055657799e-10
+t_rise_fo16=7.61935362064e-10 FROM 8.30000000031e-09 TO 9.06193536238e-09
+t_fall_fo16=8.1019654909e-10 FROM 5.50000002118e-10 TO 1.36019655121e-09

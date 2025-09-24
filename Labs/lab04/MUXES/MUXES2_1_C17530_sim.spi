@@ -1,0 +1,199 @@
+*** SPICE deck for cell MUXES2_1_C17530_sim{lay} from library IE0311_C17530_I2025
+*** Created on Fri Jun 27, 2025 21:38:48
+*** Last revised on Sat Jun 28, 2025 00:29:53
+*** Written on Sat Jun 28, 2025 00:29:58 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311_C17530_I2025__MUX2_1_NAND FROM CELL MUX2_1_NAND{lay}
+.SUBCKT IE0311_C17530_I2025__MUX2_1_NAND a_C17530 b_C17530 gnd sel_b_C17530 sel_C17530 vdd X1_C17530 X2_C17530 y_C17530
+Mnmos@0 net@6 b_C17530#2nmos@0_poly-left X2_C17530 gnd NMOS L=0.4U W=2U AS=1.733P AD=1.4P PS=4.4U PD=3.4U
+Mnmos@1 gnd sel_b_C17530#0nmos@1_poly-left net@6 gnd NMOS L=0.4U W=2U AS=1.4P AD=7.2P PS=3.4U PD=16.8U
+Mnmos@2 net@45 X1_C17530#2nmos@2_poly-left y_C17530 gnd NMOS L=0.4U W=2U AS=1.733P AD=1.4P PS=4.4U PD=3.4U
+Mnmos@3 gnd X2_C17530#8nmos@3_poly-left net@45 gnd NMOS L=0.4U W=2U AS=1.4P AD=7.2P PS=3.4U PD=16.8U
+Mnmos@4 net@84 a_C17530#2nmos@4_poly-left X1_C17530 gnd NMOS L=0.4U W=2U AS=1.733P AD=1.4P PS=4.4U PD=3.4U
+Mnmos@5 gnd sel_C17530#0nmos@5_poly-left net@84 gnd NMOS L=0.4U W=2U AS=1.4P AD=7.2P PS=3.4U PD=16.8U
+Mpmos@0 vdd sel_b_C17530#2pmos@0_poly-right X2_C17530 vdd PMOS L=0.4U W=2U AS=1.733P AD=4.8P PS=4.4U PD=11.6U
+Mpmos@1 X2_C17530 b_C17530#0pmos@1_poly-right vdd vdd PMOS L=0.4U W=2U AS=4.8P AD=1.733P PS=11.6U PD=4.4U
+Mpmos@2 vdd X2_C17530#10pmos@2_poly-right y_C17530 vdd PMOS L=0.4U W=2U AS=1.733P AD=4.8P PS=4.4U PD=11.6U
+Mpmos@3 y_C17530 X1_C17530#0pmos@3_poly-right vdd vdd PMOS L=0.4U W=2U AS=4.8P AD=1.733P PS=11.6U PD=4.4U
+Mpmos@4 vdd sel_C17530#2pmos@4_poly-right X1_C17530 vdd PMOS L=0.4U W=2U AS=1.733P AD=4.8P PS=4.4U PD=11.6U
+Mpmos@5 X1_C17530 a_C17530#0pmos@5_poly-right vdd vdd PMOS L=0.4U W=2U AS=4.8P AD=1.733P PS=11.6U PD=4.4U
+** Extracted Parasitic Capacitors ***
+C0 X2_C17530 0 5.251fF
+C1 y_C17530 0 3.747fF
+C2 X1_C17530 0 6.709fF
+C3 b_C17530#3pin@15_polysilicon-1 0 0.241fF
+C4 sel_b_C17530#3pin@16_polysilicon-1 0 0.241fF
+C5 X1_C17530#3pin@34_polysilicon-1 0 0.242fF
+C6 X2_C17530#11pin@35_polysilicon-1 0 0.241fF
+C7 a_C17530#3pin@53_polysilicon-1 0 0.241fF
+C8 sel_C17530#3pin@54_polysilicon-1 0 0.241fF
+** Extracted Parasitic Resistors ***
+R0 b_C17530#2nmos@0_poly-left b_C17530#2nmos@0_poly-left##0 9.494
+R1 b_C17530#2nmos@0_poly-left##0 b_C17530#2nmos@0_poly-left##1 9.494
+R2 b_C17530#2nmos@0_poly-left##1 b_C17530#2nmos@0_poly-left##2 9.494
+R3 b_C17530#2nmos@0_poly-left##2 b_C17530#2nmos@0_poly-left##3 9.494
+R4 b_C17530#2nmos@0_poly-left##3 b_C17530#2nmos@0_poly-left##4 9.494
+R5 b_C17530#2nmos@0_poly-left##4 b_C17530#2nmos@0_poly-left##5 9.494
+R6 b_C17530#2nmos@0_poly-left##5 b_C17530#2nmos@0_poly-left##6 9.494
+R7 b_C17530#2nmos@0_poly-left##6 b_C17530#3pin@15_polysilicon-1 9.494
+R8 b_C17530#3pin@15_polysilicon-1 b_C17530#3pin@15_polysilicon-1##0 7.75
+R9 b_C17530#3pin@15_polysilicon-1##0 b_C17530#3pin@15_polysilicon-1##1 7.75
+R10 b_C17530#3pin@15_polysilicon-1##1 b_C17530#0pmos@1_poly-right 7.75
+R11 b_C17530#3pin@15_polysilicon-1 b_C17530#3pin@15_polysilicon-1##0 8.138
+R12 b_C17530#3pin@15_polysilicon-1##0 b_C17530#3pin@15_polysilicon-1##1 8.138
+R13 b_C17530#3pin@15_polysilicon-1##1 b_C17530#3pin@15_polysilicon-1##2 8.138
+R14 b_C17530#3pin@15_polysilicon-1##2 b_C17530 8.138
+R15 sel_b_C17530#2pmos@0_poly-right sel_b_C17530#2pmos@0_poly-right##0 9.494
+R16 sel_b_C17530#2pmos@0_poly-right##0 sel_b_C17530#2pmos@0_poly-right##1 9.494
+R17 sel_b_C17530#2pmos@0_poly-right##1 sel_b_C17530#2pmos@0_poly-right##2 9.494
+R18 sel_b_C17530#2pmos@0_poly-right##2 sel_b_C17530#2pmos@0_poly-right##3 9.494
+R19 sel_b_C17530#2pmos@0_poly-right##3 sel_b_C17530#2pmos@0_poly-right##4 9.494
+R20 sel_b_C17530#2pmos@0_poly-right##4 sel_b_C17530#2pmos@0_poly-right##5 9.494
+R21 sel_b_C17530#2pmos@0_poly-right##5 sel_b_C17530#2pmos@0_poly-right##6 9.494
+R22 sel_b_C17530#2pmos@0_poly-right##6 sel_b_C17530#3pin@16_polysilicon-1 9.494
+R23 sel_b_C17530#3pin@16_polysilicon-1 sel_b_C17530#3pin@16_polysilicon-1##0 7.75
+R24 sel_b_C17530#3pin@16_polysilicon-1##0 sel_b_C17530#3pin@16_polysilicon-1##1 7.75
+R25 sel_b_C17530#3pin@16_polysilicon-1##1 sel_b_C17530#0nmos@1_poly-left 7.75
+R26 sel_b_C17530#3pin@16_polysilicon-1 sel_b_C17530#3pin@16_polysilicon-1##0 8.138
+R27 sel_b_C17530#3pin@16_polysilicon-1##0 sel_b_C17530#3pin@16_polysilicon-1##1 8.138
+R28 sel_b_C17530#3pin@16_polysilicon-1##1 sel_b_C17530#3pin@16_polysilicon-1##2 8.138
+R29 sel_b_C17530#3pin@16_polysilicon-1##2 sel_b_C17530 8.138
+R30 X1_C17530#2nmos@2_poly-left X1_C17530#2nmos@2_poly-left##0 9.494
+R31 X1_C17530#2nmos@2_poly-left##0 X1_C17530#2nmos@2_poly-left##1 9.494
+R32 X1_C17530#2nmos@2_poly-left##1 X1_C17530#2nmos@2_poly-left##2 9.494
+R33 X1_C17530#2nmos@2_poly-left##2 X1_C17530#2nmos@2_poly-left##3 9.494
+R34 X1_C17530#2nmos@2_poly-left##3 X1_C17530#2nmos@2_poly-left##4 9.494
+R35 X1_C17530#2nmos@2_poly-left##4 X1_C17530#2nmos@2_poly-left##5 9.494
+R36 X1_C17530#2nmos@2_poly-left##5 X1_C17530#2nmos@2_poly-left##6 9.494
+R37 X1_C17530#2nmos@2_poly-left##6 X1_C17530#3pin@34_polysilicon-1 9.494
+R38 X1_C17530#3pin@34_polysilicon-1 X1_C17530#3pin@34_polysilicon-1##0 7.75
+R39 X1_C17530#3pin@34_polysilicon-1##0 X1_C17530#3pin@34_polysilicon-1##1 7.75
+R40 X1_C17530#3pin@34_polysilicon-1##1 X1_C17530#0pmos@3_poly-right 7.75
+R41 X1_C17530#3pin@34_polysilicon-1 X1_C17530#3pin@34_polysilicon-1##0 8.783
+R42 X1_C17530#3pin@34_polysilicon-1##0 X1_C17530#3pin@34_polysilicon-1##1 8.783
+R43 X1_C17530#3pin@34_polysilicon-1##1 X1_C17530 8.783
+R44 X2_C17530#10pmos@2_poly-right X2_C17530#10pmos@2_poly-right##0 9.494
+R45 X2_C17530#10pmos@2_poly-right##0 X2_C17530#10pmos@2_poly-right##1 9.494
+R46 X2_C17530#10pmos@2_poly-right##1 X2_C17530#10pmos@2_poly-right##2 9.494
+R47 X2_C17530#10pmos@2_poly-right##2 X2_C17530#10pmos@2_poly-right##3 9.494
+R48 X2_C17530#10pmos@2_poly-right##3 X2_C17530#10pmos@2_poly-right##4 9.494
+R49 X2_C17530#10pmos@2_poly-right##4 X2_C17530#10pmos@2_poly-right##5 9.494
+R50 X2_C17530#10pmos@2_poly-right##5 X2_C17530#10pmos@2_poly-right##6 9.494
+R51 X2_C17530#10pmos@2_poly-right##6 X2_C17530#11pin@35_polysilicon-1 9.494
+R52 X2_C17530#11pin@35_polysilicon-1 X2_C17530#11pin@35_polysilicon-1##0 7.75
+R53 X2_C17530#11pin@35_polysilicon-1##0 X2_C17530#11pin@35_polysilicon-1##1 7.75
+R54 X2_C17530#11pin@35_polysilicon-1##1 X2_C17530#8nmos@3_poly-left 7.75
+R55 X2_C17530#11pin@35_polysilicon-1 X2_C17530#11pin@35_polysilicon-1##0 8.138
+R56 X2_C17530#11pin@35_polysilicon-1##0 X2_C17530#11pin@35_polysilicon-1##1 8.138
+R57 X2_C17530#11pin@35_polysilicon-1##1 X2_C17530#11pin@35_polysilicon-1##2 8.138
+R58 X2_C17530#11pin@35_polysilicon-1##2 X2_C17530 8.138
+R59 a_C17530#2nmos@4_poly-left a_C17530#2nmos@4_poly-left##0 9.494
+R60 a_C17530#2nmos@4_poly-left##0 a_C17530#2nmos@4_poly-left##1 9.494
+R61 a_C17530#2nmos@4_poly-left##1 a_C17530#2nmos@4_poly-left##2 9.494
+R62 a_C17530#2nmos@4_poly-left##2 a_C17530#2nmos@4_poly-left##3 9.494
+R63 a_C17530#2nmos@4_poly-left##3 a_C17530#2nmos@4_poly-left##4 9.494
+R64 a_C17530#2nmos@4_poly-left##4 a_C17530#2nmos@4_poly-left##5 9.494
+R65 a_C17530#2nmos@4_poly-left##5 a_C17530#2nmos@4_poly-left##6 9.494
+R66 a_C17530#2nmos@4_poly-left##6 a_C17530#3pin@53_polysilicon-1 9.494
+R67 a_C17530#3pin@53_polysilicon-1 a_C17530#3pin@53_polysilicon-1##0 7.75
+R68 a_C17530#3pin@53_polysilicon-1##0 a_C17530#3pin@53_polysilicon-1##1 7.75
+R69 a_C17530#3pin@53_polysilicon-1##1 a_C17530#0pmos@5_poly-right 7.75
+R70 a_C17530#3pin@53_polysilicon-1 a_C17530#3pin@53_polysilicon-1##0 8.138
+R71 a_C17530#3pin@53_polysilicon-1##0 a_C17530#3pin@53_polysilicon-1##1 8.138
+R72 a_C17530#3pin@53_polysilicon-1##1 a_C17530#3pin@53_polysilicon-1##2 8.138
+R73 a_C17530#3pin@53_polysilicon-1##2 a_C17530 8.138
+R74 sel_C17530#2pmos@4_poly-right sel_C17530#2pmos@4_poly-right##0 9.494
+R75 sel_C17530#2pmos@4_poly-right##0 sel_C17530#2pmos@4_poly-right##1 9.494
+R76 sel_C17530#2pmos@4_poly-right##1 sel_C17530#2pmos@4_poly-right##2 9.494
+R77 sel_C17530#2pmos@4_poly-right##2 sel_C17530#2pmos@4_poly-right##3 9.494
+R78 sel_C17530#2pmos@4_poly-right##3 sel_C17530#2pmos@4_poly-right##4 9.494
+R79 sel_C17530#2pmos@4_poly-right##4 sel_C17530#2pmos@4_poly-right##5 9.494
+R80 sel_C17530#2pmos@4_poly-right##5 sel_C17530#2pmos@4_poly-right##6 9.494
+R81 sel_C17530#2pmos@4_poly-right##6 sel_C17530#3pin@54_polysilicon-1 9.494
+R82 sel_C17530#3pin@54_polysilicon-1 sel_C17530#3pin@54_polysilicon-1##0 7.75
+R83 sel_C17530#3pin@54_polysilicon-1##0 sel_C17530#3pin@54_polysilicon-1##1 7.75
+R84 sel_C17530#3pin@54_polysilicon-1##1 sel_C17530#0nmos@5_poly-left 7.75
+R85 sel_C17530#3pin@54_polysilicon-1 sel_C17530#3pin@54_polysilicon-1##0 8.138
+R86 sel_C17530#3pin@54_polysilicon-1##0 sel_C17530#3pin@54_polysilicon-1##1 8.138
+R87 sel_C17530#3pin@54_polysilicon-1##1 sel_C17530#3pin@54_polysilicon-1##2 8.138
+R88 sel_C17530#3pin@54_polysilicon-1##2 sel_C17530 8.138
+.ENDS IE0311_C17530_I2025__MUX2_1_NAND
+
+*** SUBCIRCUIT IE0311_C17530_I2025__MUX2_1_TGATE FROM CELL MUX2_1_TGATE{lay}
+.SUBCKT IE0311_C17530_I2025__MUX2_1_TGATE a_C17530 b_C17530 gnd sel_b_C17530 sel_C17530 vdd y_C17530
+Mnmos@0 y_C17530 sel_b_C17530#9nmos@0_poly-right a_C17530 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.4P PS=6.4U PD=6.4U
+Mnmos@1 y_C17530 sel_C17530#11nmos@1_poly-right b_C17530 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.4P PS=6.4U PD=6.4U
+Mpmos@0 y_C17530 sel_C17530#8pmos@0_poly-left a_C17530 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.4P PS=6.4U PD=6.4U
+Mpmos@1 y_C17530 sel_b_C17530#11pmos@1_poly-left b_C17530 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.4P PS=6.4U PD=6.4U
+** Extracted Parasitic Capacitors ***
+C0 sel_b_C17530 0 5.639fF
+C1 sel_C17530 0 6.694fF
+C2 a_C17530 0 1.937fF
+C3 y_C17530 0 7.239fF
+C4 b_C17530 0 1.937fF
+** Extracted Parasitic Resistors ***
+R0 sel_C17530 sel_C17530##0 8.525
+R1 sel_C17530##0 sel_C17530#8pmos@0_poly-left 8.525
+R2 sel_b_C17530 sel_b_C17530##0 8.525
+R3 sel_b_C17530##0 sel_b_C17530#9nmos@0_poly-right 8.525
+R4 sel_b_C17530 sel_b_C17530##0 8.525
+R5 sel_b_C17530##0 sel_b_C17530#11pmos@1_poly-left 8.525
+R6 sel_C17530 sel_C17530##0 8.525
+R7 sel_C17530##0 sel_C17530#11nmos@1_poly-right 8.525
+.ENDS IE0311_C17530_I2025__MUX2_1_TGATE
+
+*** TOP LEVEL CELL: MUXES2_1_C17530_sim{lay}
+XMUX2_1_N@0 ina inb gnd selb sel vdd MUX2_1_N@0_X1_C17530 MUX2_1_N@0_X2_C17530 yout1 IE0311_C17530_I2025__MUX2_1_NAND
+XMUX2_1_T@0 ina inb gnd sel selb vdd yout2 IE0311_C17530_I2025__MUX2_1_TGATE
+** Extracted Parasitic Capacitors ***
+C0 ina 0 0.381fF
+C1 inb 0 1.941fF
+C2 sel 0 1.888fF
+C3 selb 0 0.381fF
+C4 yout1 0 3.671fF
+C5 ina 0 0.286fF
+C6 inb 0 0.349fF
+C7 selb 0 1.705fF
+C8 sel 0 1.731fF
+C9 yout2 0 2.286fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'MUXES2_1_C17530_sim{lay}'
+.include /home/ragnarok/Desktop/ie0311/lab04/spice.txt 
+* Inputs
+VGND gnd 0 DC 0 
+VDD vdd 0 DC 5
+VINB inb 0 DC 0
+VINA ina 0 PULSE 0 5 6n 0.1n 0.1n 2n 4n
+VSELB selb 0 PULSE 0 5 0.5n 0.1n 0.1n 5n 10.2n
+VSEL sel 0 PULSE 0 5 5.6n 0.1n 0.1n 5n 10.2n
+* Análisis Transitorio - Funcion tiempo
+.tran 0 40n
+* MUX NANDs
+.MEAS t_rise_nands TRIG V(ina) VAL=2.5 RISE=1 TARG V(yout1)=2.5 RISE=1
+.MEAS t_fall_nands TRIG V(ina) VAL=2.5 FALL=1 TARG V(yout1)=2.5 FALL=1
+*MUX Tgate
+.MEAS t_rise_tgates TRIG V(ina) VAL=2.5 RISE=1 TARG V(yout2)=2.5 RISE=1
+.MEAS t_fall_tgates TRIG V(ina) VAL=2.5 FALL=1 TARG V(yout2)=2.5 FALL=1
+.END

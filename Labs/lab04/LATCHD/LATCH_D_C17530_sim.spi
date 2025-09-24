@@ -1,0 +1,114 @@
+*** SPICE deck for cell LATCH_D_C17530_sim{lay} from library IE0311_C17530_I2025
+*** Created on Sat Jun 28, 2025 21:27:52
+*** Last revised on Sun Jun 29, 2025 02:41:07
+*** Written on Sun Jun 29, 2025 02:41:26 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311_C17530_I2025__LATCH_D_C17530 FROM CELL LATCH_D_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__LATCH_D_C17530 clk_b_C17530 clk_C17530 D_C17530 gnd Q_C17530 vdd
+Mnmos@0 net@4 D_C17530#2nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@1 net@4 clk_C17530#1nmos@1_poly-right net@24 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@2 net@52 Q_C17530#2nmos@2_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@3 net@52 clk_b_C17530#3nmos@3_poly-right net@24 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@4 Q_C17530 net@24#12nmos@4_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mpmos@0 net@4 D_C17530#0pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@1 net@4 clk_b_C17530#1pmos@1_poly-left net@24 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@2 net@52 Q_C17530#0pmos@2_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@3 net@52 clk_C17530#3pmos@3_poly-left net@24 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@4 Q_C17530 net@24#10pmos@4_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+** Extracted Parasitic Capacitors ***
+C0 net@4 0 5.874fF
+C1 net@24 0 7.99fF
+C2 clk_b_C17530 0 5.901fF
+C3 clk_C17530 0 5.823fF
+C4 net@52 0 8.446fF
+C5 Q_C17530 0 6.633fF
+C6 D_C17530#1pin@11_polysilicon-1 0 0.222fF
+C7 Q_C17530#1pin@32_polysilicon-1 0 0.222fF
+C8 net@24#11pin@54_polysilicon-1 0 0.222fF
+** Extracted Parasitic Resistors ***
+R0 D_C17530#0pmos@0_poly-left D_C17530#0pmos@0_poly-left##0 9.92
+R1 D_C17530#0pmos@0_poly-left##0 D_C17530#0pmos@0_poly-left##1 9.92
+R2 D_C17530#0pmos@0_poly-left##1 D_C17530#0pmos@0_poly-left##2 9.92
+R3 D_C17530#0pmos@0_poly-left##2 D_C17530#0pmos@0_poly-left##3 9.92
+R4 D_C17530#0pmos@0_poly-left##3 D_C17530#1pin@11_polysilicon-1 9.92
+R5 D_C17530#1pin@11_polysilicon-1 D_C17530#1pin@11_polysilicon-1##0 7.75
+R6 D_C17530#1pin@11_polysilicon-1##0 D_C17530#1pin@11_polysilicon-1##1 7.75
+R7 D_C17530#1pin@11_polysilicon-1##1 D_C17530#2nmos@0_poly-right 7.75
+R8 D_C17530#1pin@11_polysilicon-1 D_C17530#1pin@11_polysilicon-1##0 6.717
+R9 D_C17530#1pin@11_polysilicon-1##0 D_C17530#1pin@11_polysilicon-1##1 6.717
+R10 D_C17530#1pin@11_polysilicon-1##1 D_C17530 6.717
+R11 clk_C17530 clk_C17530##0 8.525
+R12 clk_C17530##0 clk_C17530#1nmos@1_poly-right 8.525
+R13 clk_b_C17530 clk_b_C17530##0 8.525
+R14 clk_b_C17530##0 clk_b_C17530#1pmos@1_poly-left 8.525
+R15 Q_C17530#0pmos@2_poly-left Q_C17530#0pmos@2_poly-left##0 9.92
+R16 Q_C17530#0pmos@2_poly-left##0 Q_C17530#0pmos@2_poly-left##1 9.92
+R17 Q_C17530#0pmos@2_poly-left##1 Q_C17530#0pmos@2_poly-left##2 9.92
+R18 Q_C17530#0pmos@2_poly-left##2 Q_C17530#0pmos@2_poly-left##3 9.92
+R19 Q_C17530#0pmos@2_poly-left##3 Q_C17530#1pin@32_polysilicon-1 9.92
+R20 Q_C17530#1pin@32_polysilicon-1 Q_C17530#1pin@32_polysilicon-1##0 7.75
+R21 Q_C17530#1pin@32_polysilicon-1##0 Q_C17530#1pin@32_polysilicon-1##1 7.75
+R22 Q_C17530#1pin@32_polysilicon-1##1 Q_C17530#2nmos@2_poly-right 7.75
+R23 Q_C17530#1pin@32_polysilicon-1 Q_C17530#1pin@32_polysilicon-1##0 6.717
+R24 Q_C17530#1pin@32_polysilicon-1##0 Q_C17530#1pin@32_polysilicon-1##1 6.717
+R25 Q_C17530#1pin@32_polysilicon-1##1 Q_C17530 6.717
+R26 clk_b_C17530 clk_b_C17530##0 8.525
+R27 clk_b_C17530##0 clk_b_C17530#3nmos@3_poly-right 8.525
+R28 clk_C17530 clk_C17530##0 8.525
+R29 clk_C17530##0 clk_C17530#3pmos@3_poly-left 8.525
+R30 net@24#10pmos@4_poly-left net@24#10pmos@4_poly-left##0 7.75
+R31 net@24#10pmos@4_poly-left##0 net@24#10pmos@4_poly-left##1 7.75
+R32 net@24#10pmos@4_poly-left##1 net@24#11pin@54_polysilicon-1 7.75
+R33 net@24#11pin@54_polysilicon-1 net@24#11pin@54_polysilicon-1##0 9.92
+R34 net@24#11pin@54_polysilicon-1##0 net@24#11pin@54_polysilicon-1##1 9.92
+R35 net@24#11pin@54_polysilicon-1##1 net@24#11pin@54_polysilicon-1##2 9.92
+R36 net@24#11pin@54_polysilicon-1##2 net@24#11pin@54_polysilicon-1##3 9.92
+R37 net@24#11pin@54_polysilicon-1##3 net@24#12nmos@4_poly-right 9.92
+R38 net@24#11pin@54_polysilicon-1 net@24#11pin@54_polysilicon-1##0 6.717
+R39 net@24#11pin@54_polysilicon-1##0 net@24#11pin@54_polysilicon-1##1 6.717
+R40 net@24#11pin@54_polysilicon-1##1 net@24 6.717
+.ENDS IE0311_C17530_I2025__LATCH_D_C17530
+
+*** TOP LEVEL CELL: LATCH_D_C17530_sim{lay}
+XLATCH_D_@0 clkb clk ind gnd outq vdd IE0311_C17530_I2025__LATCH_D_C17530
+** Extracted Parasitic Capacitors ***
+C0 ind 0 1.334fF
+C1 outq 0 1.27fF
+C2 clk 0 0.921fF
+C3 clkb 0 0.857fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'LATCH_D_C17530_sim{lay}'
+.include /home/ragnarok/Desktop/ie0311/lab04/spice.txt
+* Fuentes de poder
+VDD vdd 0 DC 5
+VGND gnd 0 DC 0
+* Señal de entrada de datos (ind)
+VIND ind 0 PULSE(0 5 2n 0.1n 0.1n 2n 4n)
+* Señal de reloj (clk)
+VCLK clk 0 PULSE(0 5 0n 0.1n 0.1n 5n 10n)
+VCLKB clkb 0 PULSE(5 0 0n 0.1n 0.1n 5n 10n)
+* Análisis Transitorio - Funcion tiempo
+.tran 0 40n
+.END

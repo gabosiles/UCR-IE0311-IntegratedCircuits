@@ -1,0 +1,21 @@
+LTspice 24.1.6 for Windows
+Circuit: C:\users\ragnarok\Desktop\ie0311\lab03\NOR\NOR2_VOUT_VIN_C17530_sim.spi
+Start Time: Sun Jun  8 14:34:49 2025
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node xnor2_20_@2:b_c17530#2nmos@1_poly-left##3 is floating.
+
+.step 
+Total elapsed time: 0.128 seconds.
+
+Files loaded:
+C:\users\ragnarok\Desktop\ie0311\lab03\NOR\NOR2_VOUT_VIN_C17530_sim.spi
+Z:\home\ragnarok\Desktop\ie0311\lab03\spice.txt
+

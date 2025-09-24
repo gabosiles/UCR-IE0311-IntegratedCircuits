@@ -1,0 +1,56 @@
+*** SPICE deck for cell PMOS_IV_C17530_sim{lay} from library IE0311_C17530_I2025
+*** Created on Sun Apr 27, 2025 22:17:21
+*** Last revised on Sun Apr 27, 2025 23:06:38
+*** Written on Sun Apr 27, 2025 23:06:45 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311_C17530_I2025__PMOS_IV_C17530 FROM CELL PMOS_IV_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__PMOS_IV_C17530 d_C17530 g_C17530 s_C17530 vdd_C17530
+Mpmos@0 s_C17530 g_C17530#0pmos@0_poly-left d_C17530 vdd_C17530 PMOS L=0.4U W=2U AS=2.4P AD=2.4P PS=6.4U PD=6.4U
+** Extracted Parasitic Capacitors ***
+C0 s_C17530 0 0.572fF
+C1 d_C17530 0 0.572fF
+** Extracted Parasitic Resistors ***
+R0 g_C17530 g_C17530##0 8.267
+R1 g_C17530##0 g_C17530##1 8.267
+R2 g_C17530##1 g_C17530#0pmos@0_poly-left 8.267
+.ENDS IE0311_C17530_I2025__PMOS_IV_C17530
+
+*** TOP LEVEL CELL: PMOS_IV_C17530_sim{lay}
+XPMOS_IV_@0 Vd Vg Vs VDD IE0311_C17530_I2025__PMOS_IV_C17530
+** Extracted Parasitic Capacitors ***
+C0 Vd 0 0.508fF
+C1 Vg 0 0.413fF
+C2 Vs 0 0.508fF
+C3 VDD 0 0.318fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'PMOS_IV_C17530_sim{lay}'
+.include /home/ragnarok/Desktop/lab01-ie0311/spice.txt
+VVDD VDD 0 DC 5
+Vgs Vg Vs DC {Vgs_var}
+Vs Vs VDD DC 0
+Vds Vd Vs DC 0
+.step param Vgs_var -5 0 1
+.DC Vds -5 0 1m
+.END

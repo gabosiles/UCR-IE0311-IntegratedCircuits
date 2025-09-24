@@ -1,0 +1,23 @@
+LTspice 24.1.6 for Windows
+Circuit: C:\users\ragnarok\Desktop\ie0311\lab03\AOI21\AOI21_DELAY_C17530_sim.spi
+Start Time: Sun Jun  8 23:26:41 2025
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.098 seconds.
+
+Files loaded:
+C:\users\ragnarok\Desktop\ie0311\lab03\AOI21\AOI21_DELAY_C17530_sim.spi
+Z:\home\ragnarok\Desktop\ie0311\lab03\spice.txt
+
+t_rise_fo4_a=7.95232897455e-09 FROM 8.30000000141e-09 TO 1.6252328976e-08
+t_fall_fo4_a=3.46353947967e-10 FROM 5.49999999197e-10 TO 8.96353947164e-10
+t_rise_fo4_c=2.02328976744e-10 FROM 1.60499999992e-08 TO 1.6252328976e-08
+t_fall_fo4_c=-7.40364605323e-09 FROM 8.30000000039e-09 TO 8.96353947164e-10

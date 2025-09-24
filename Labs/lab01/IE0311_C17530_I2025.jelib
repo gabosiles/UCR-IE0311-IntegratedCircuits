@@ -1,0 +1,87 @@
+# header information:
+HIE0311_C17530_I2025|9.07
+
+# Views:
+Vlayout|lay
+
+# Technologies:
+Tmocmos|mocmosNumberOfMetalLayers()I3
+
+# Cell NMOS_IV_C17530;1{lay}
+CNMOS_IV_C17530;1{lay}||mocmos|1745166833264|1745808471568||DRC_last_good_drc_area_date()G1745808477750|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1745808477750
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Polysilicon-1-Con|contact@0||-10|0||||
+NMetal-1-N-Active-Con|contact@1||0|4.5|5|||
+NMetal-1-N-Active-Con|contact@2||0|-5|5|||
+NN-Transistor|nmos@0||0|0|7||||SIM_spice_model(D5G1;)SNMOS
+NMetal-1-Pin|pin@0||9|4.5||||
+NMetal-1-Pin|pin@1||9|-5||||
+NMetal-1-Pin|pin@2||0|-21||||
+NMetal-1-P-Well-Con|substr@0||0|-15|5|||
+AN-Active|net@1|||S900|contact@1||0|4.5|nmos@0|diff-top|0|3.75
+AMetal-1|net@2||1|S1800|contact@1||0|4.5|pin@0||9|4.5
+AMetal-1|net@3||1|S1800|contact@2||0|-5|pin@1||9|-5
+AN-Active|net@4|||S2700|contact@2||0|-5|nmos@0|diff-bottom|0|-3.75
+AMetal-1|net@5||1|S900|substr@0||0|-15|pin@2||0|-21
+APolysilicon-1|net@6|||S1800|contact@0||-10|0|nmos@0|poly-left|-7|0
+Ed_C17530||D5G2;|pin@0||B
+Eg_C17530||D5G2;|contact@0||I
+Egnd_C17530||D5G2;|pin@2||G
+Es_C17530||D5G2;|pin@1||B
+X
+
+# Cell NMOS_IV_C17530_sim;1{lay}
+CNMOS_IV_C17530_sim;1{lay}||mocmos|1745801706459|1745810919562||DRC_last_good_drc_area_date()G1745805903025|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1745805903025
+INMOS_IV_C17530;1{lay}|NMOS_IV_@0||6.5|4.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||21.5|9||||
+NMetal-1-Pin|pin@1||21.5|-0.5||||
+NMetal-1-Pin|pin@7||6.5|-24||||
+Ngeneric:Invisible-Pin|pin@9||6.5|14|||||SIM_spice_card(D5G1;)S[.include /home/ragnarok/Desktop/lab01-ie0311/spice.txt ,VGND GND 0 DC 0 ,Vgs Vg Vs DC 5 ,Vs Vs 0 DC 0 ,Vds Vd Vs DC 0 ,.DC Vds 0 5 1m]
+NMetal-1-Pin|pin@10||-11|4.5||||
+AMetal-1|GND|D5G1;|1|S900|NMOS_IV_@0|gnd_C17530|6.5|-16.5|pin@7||6.5|-24
+AMetal-1|Vd|D5G1;|1|S1800|NMOS_IV_@0|d_C17530|15.5|9|pin@0||21.5|9
+AMetal-1|Vg|D5G1;|1|S0|NMOS_IV_@0|g_C17530|-3.5|4.5|pin@10||-11|4.5
+AMetal-1|Vs|D5G1;|1|S1800|NMOS_IV_@0|s_C17530|15.5|-0.5|pin@1||21.5|-0.5
+X
+
+# Cell PMOS_IV_C17530;1{lay}
+CPMOS_IV_C17530;1{lay}||mocmos|1745813103239|1745814738377||DRC_last_good_drc_area_date()G1745813655136|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1745814775118
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Polysilicon-1-Con|contact@0||-15|0||||
+NMetal-1-P-Active-Con|contact@2||0|-4.5|5|||
+NMetal-1-P-Active-Con|contact@3||0|4.5|5|||
+NMetal-1-Pin|pin@1||9|4.5||||
+NMetal-1-Pin|pin@2||9|-4.5||||
+NMetal-1-Pin|pin@5||0|-21||||
+NP-Transistor|pmos@0||0|0|7||||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-N-Well-Con|well@0||0|-14|5|||
+APolysilicon-1|net@0|||S1800|contact@0||-15|0|pmos@0|poly-left|-7|0
+AP-Active|net@4|||S2700|contact@2||0|-5|pmos@0|diff-bottom|0|-3.75
+AP-Active|net@5|||S2700|contact@2||0|-5|pmos@0|diff-bottom|0|-3.75
+AP-Active|net@6|||S900|contact@3||0|4.5|pmos@0|diff-top|0|3.75
+AP-Active|net@7|||S2700|contact@2||0|-5|pmos@0|diff-bottom|0|-3.75
+AMetal-1|net@8||1|S1800|contact@3||0|4.5|pin@1||9|4.5
+AMetal-1|net@9||1|S1800|contact@2||0|-4.5|pin@2||9|-4.5
+AMetal-1|net@12||1|S900|well@0||0|-14|pin@5||0|-21
+AMetal-1|net@13|||S|pin@5||0|-21|pin@5||0|-21
+Ed_C17530||D5G2;|pin@1||B
+Eg_C17530||D5G2;|contact@0||I
+Es_C17530||D5G2;|pin@2||B
+Evdd_C17530||D5G2;|pin@5||P
+X
+
+# Cell PMOS_IV_C17530_sim;1{lay}
+CPMOS_IV_C17530_sim;1{lay}||mocmos|1745813841741|1745816798711||DRC_last_good_drc_area_date()G1745816633532|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1745816633532
+IPMOS_IV_C17530;1{lay}|PMOS_IV_@0||3|4|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-18.5|4||||
+NMetal-1-Pin|pin@1||20|8.5||||
+NMetal-1-Pin|pin@2||20|-0.5||||
+Ngeneric:Invisible-Pin|pin@4||0|14|||||SIM_spice_card(D5G1;)S[.include /home/ragnarok/Desktop/lab01-ie0311/spice.txt ,VVDD VDD 0 DC 5 ,Vgs Vg Vs DC 0 ,Vs Vs VDD DC 0 ,Vds Vd Vs DC 0 ,.DC Vds -5 0 1m]
+NMetal-1-Pin|pin@5||3|-22||||
+AMetal-1|VDD|D5G1;|1|S900|PMOS_IV_@0|vdd_C17530|3|-17|pin@5||3|-22
+AMetal-1|Vd|D5G1;|1|S1800|PMOS_IV_@0|d_C17530|12|8.5|pin@1||20|8.5
+AMetal-1|Vg|D5G1;|1|S0|PMOS_IV_@0|g_C17530|-12|4|pin@0||-18.5|4
+AMetal-1|Vs|D5G1;|1|S1800|PMOS_IV_@0|s_C17530|12|-0.5|pin@2||20|-0.5
+X

@@ -1,0 +1,215 @@
+*** SPICE deck for cell FF_D_POS_C17530_sim{lay} from library IE0311_C17530_I2025
+*** Created on Sun Jun 29, 2025 04:20:09
+*** Last revised on Sun Jun 29, 2025 15:17:33
+*** Written on Sun Jun 29, 2025 15:17:39 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311_C17530_I2025__FF_D_POS_C17530 FROM CELL FF_D_POS_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__FF_D_POS_C17530 CLK_C17530 D_C17530 gnd Q_C17530 vdd
+Mnmos@0 net@8 CLK_C17530#2nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mnmos@1 net@31 D_C17530#2nmos@1_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@2 net@31 net@8#5nmos@2_poly-right net@28 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@3 net@58 net@62#2nmos@3_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@4 net@58 CLK_C17530#7nmos@4_poly-right net@28 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@5 net@62#3contact@24_metal-1-polysilicon-1 net@28#12nmos@5_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mnmos@6 net@167 CLK_C17530#14nmos@6_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mnmos@7 net@190 net@8#17nmos@7_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mnmos@8 net@240 net@62#14nmos@8_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@9 net@240 net@190#10nmos@9_poly-right net@217#3contact@94_metal-1-polysilicon-1 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@10 net@229 Q_C17530#9nmos@10_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.85P PS=16.6U PD=7.3U
+Mnmos@11 net@229 net@167#9nmos@11_poly-right net@217#3contact@94_metal-1-polysilicon-1 gnd NMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mnmos@12 Q_C17530 net@217#2nmos@12_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mpmos@0 net@8 CLK_C17530#0pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+Mpmos@1 net@31 D_C17530#0pmos@1_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@2 net@31 CLK_C17530#5pmos@2_poly-left net@28 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@3 net@58 net@62 vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@4 net@58 net@8#7pmos@4_poly-left net@28 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@5 net@62#3contact@24_metal-1-polysilicon-1 net@28#10pmos@5_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+Mpmos@6 net@167 CLK_C17530#12pmos@6_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+Mpmos@7 net@190 net@8#15pmos@7_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+Mpmos@8 net@240 net@62#12pmos@8_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@9 net@240 net@167#8pmos@9_poly-left net@217#3contact@94_metal-1-polysilicon-1 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@10 net@229 Q_C17530#7pmos@10_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=2.85P PS=20.8U PD=7.3U
+Mpmos@11 net@229 net@190#11pmos@11_poly-left net@217#3contact@94_metal-1-polysilicon-1 vdd PMOS L=0.4U W=2U AS=2.4P AD=2.85P PS=6.4U PD=7.3U
+Mpmos@12 Q_C17530 net@217 vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+** Extracted Parasitic Capacitors ***
+C0 net@8 0 16.772fF
+C1 CLK_C17530 0 14.472fF
+C2 net@31 0 5.874fF
+C3 D_C17530 0 2.707fF
+C4 net@28 0 7.99fF
+C5 net@58 0 8.446fF
+C6 net@62#3contact@24_metal-1-polysilicon-1 0 11.701fF
+C7 net@167 0 12.939fF
+C8 net@190 0 13.316fF
+C9 net@240 0 5.874fF
+C10 net@217#3contact@94_metal-1-polysilicon-1 0 7.99fF
+C11 net@229 0 8.446fF
+C12 Q_C17530 0 6.633fF
+C13 CLK_C17530#1pin@11_polysilicon-1 0 0.222fF
+C14 D_C17530#1pin@23_polysilicon-1 0 0.227fF
+C15 net@62#1pin@43_polysilicon-1 0 0.222fF
+C16 net@28#11pin@60_polysilicon-1 0 0.222fF
+C17 CLK_C17530#13pin@82_polysilicon-1 0 0.222fF
+C18 net@8#16pin@94_polysilicon-1 0 0.222fF
+C19 net@62#13pin@106_polysilicon-1 0 0.227fF
+C20 Q_C17530#8pin@126_polysilicon-1 0 0.222fF
+C21 net@217#1pin@143_polysilicon-1 0 0.222fF
+** Extracted Parasitic Resistors ***
+R0 CLK_C17530#0pmos@0_poly-left CLK_C17530#0pmos@0_poly-left##0 9.92
+R1 CLK_C17530#0pmos@0_poly-left##0 CLK_C17530#0pmos@0_poly-left##1 9.92
+R2 CLK_C17530#0pmos@0_poly-left##1 CLK_C17530#0pmos@0_poly-left##2 9.92
+R3 CLK_C17530#0pmos@0_poly-left##2 CLK_C17530#0pmos@0_poly-left##3 9.92
+R4 CLK_C17530#0pmos@0_poly-left##3 CLK_C17530#1pin@11_polysilicon-1 9.92
+R5 CLK_C17530#1pin@11_polysilicon-1 CLK_C17530#1pin@11_polysilicon-1##0 7.75
+R6 CLK_C17530#1pin@11_polysilicon-1##0 CLK_C17530#1pin@11_polysilicon-1##1 7.75
+R7 CLK_C17530#1pin@11_polysilicon-1##1 CLK_C17530#2nmos@0_poly-right 7.75
+R8 CLK_C17530#1pin@11_polysilicon-1 CLK_C17530#1pin@11_polysilicon-1##0 6.717
+R9 CLK_C17530#1pin@11_polysilicon-1##0 CLK_C17530#1pin@11_polysilicon-1##1 6.717
+R10 CLK_C17530#1pin@11_polysilicon-1##1 CLK_C17530 6.717
+R11 net@8 net@8##0 8.525
+R12 net@8##0 net@8#5nmos@2_poly-right 8.525
+R13 CLK_C17530 CLK_C17530##0 8.525
+R14 CLK_C17530##0 CLK_C17530#5pmos@2_poly-left 8.525
+R15 net@62 net@62##0 9.92
+R16 net@62##0 net@62##1 9.92
+R17 net@62##1 net@62##2 9.92
+R18 net@62##2 net@62##3 9.92
+R19 net@62##3 net@62#1pin@43_polysilicon-1 9.92
+R20 net@62#1pin@43_polysilicon-1 net@62#1pin@43_polysilicon-1##0 7.75
+R21 net@62#1pin@43_polysilicon-1##0 net@62#1pin@43_polysilicon-1##1 7.75
+R22 net@62#1pin@43_polysilicon-1##1 net@62#2nmos@3_poly-right 7.75
+R23 net@62#1pin@43_polysilicon-1 net@62#1pin@43_polysilicon-1##0 6.717
+R24 net@62#1pin@43_polysilicon-1##0 net@62#1pin@43_polysilicon-1##1 6.717
+R25 net@62#1pin@43_polysilicon-1##1 net@62#3contact@24_metal-1-polysilicon-1 6.717
+R26 CLK_C17530 CLK_C17530##0 8.525
+R27 CLK_C17530##0 CLK_C17530#7nmos@4_poly-right 8.525
+R28 net@8 net@8##0 8.525
+R29 net@8##0 net@8#7pmos@4_poly-left 8.525
+R30 D_C17530#0pmos@1_poly-left D_C17530#0pmos@1_poly-left##0 8.99
+R31 D_C17530#0pmos@1_poly-left##0 D_C17530#0pmos@1_poly-left##1 8.99
+R32 D_C17530#0pmos@1_poly-left##1 D_C17530#0pmos@1_poly-left##2 8.99
+R33 D_C17530#0pmos@1_poly-left##2 D_C17530#0pmos@1_poly-left##3 8.99
+R34 D_C17530#0pmos@1_poly-left##3 D_C17530#1pin@23_polysilicon-1 8.99
+R35 net@28#10pmos@5_poly-left net@28#10pmos@5_poly-left##0 7.75
+R36 net@28#10pmos@5_poly-left##0 net@28#10pmos@5_poly-left##1 7.75
+R37 net@28#10pmos@5_poly-left##1 net@28#11pin@60_polysilicon-1 7.75
+R38 net@28#11pin@60_polysilicon-1 net@28#11pin@60_polysilicon-1##0 9.92
+R39 net@28#11pin@60_polysilicon-1##0 net@28#11pin@60_polysilicon-1##1 9.92
+R40 net@28#11pin@60_polysilicon-1##1 net@28#11pin@60_polysilicon-1##2 9.92
+R41 net@28#11pin@60_polysilicon-1##2 net@28#11pin@60_polysilicon-1##3 9.92
+R42 net@28#11pin@60_polysilicon-1##3 net@28#12nmos@5_poly-right 9.92
+R43 net@28#11pin@60_polysilicon-1 net@28#11pin@60_polysilicon-1##0 6.717
+R44 net@28#11pin@60_polysilicon-1##0 net@28#11pin@60_polysilicon-1##1 6.717
+R45 net@28#11pin@60_polysilicon-1##1 net@28 6.717
+R46 D_C17530#1pin@23_polysilicon-1 D_C17530#1pin@23_polysilicon-1##0 9.3
+R47 D_C17530#1pin@23_polysilicon-1##0 D_C17530#1pin@23_polysilicon-1##1 9.3
+R48 D_C17530#1pin@23_polysilicon-1##1 D_C17530#2nmos@1_poly-right 9.3
+R49 D_C17530#1pin@23_polysilicon-1 D_C17530#1pin@23_polysilicon-1##0 6.717
+R50 D_C17530#1pin@23_polysilicon-1##0 D_C17530#1pin@23_polysilicon-1##1 6.717
+R51 D_C17530#1pin@23_polysilicon-1##1 D_C17530 6.717
+R52 CLK_C17530#12pmos@6_poly-left CLK_C17530#12pmos@6_poly-left##0 9.92
+R53 CLK_C17530#12pmos@6_poly-left##0 CLK_C17530#12pmos@6_poly-left##1 9.92
+R54 CLK_C17530#12pmos@6_poly-left##1 CLK_C17530#12pmos@6_poly-left##2 9.92
+R55 CLK_C17530#12pmos@6_poly-left##2 CLK_C17530#12pmos@6_poly-left##3 9.92
+R56 CLK_C17530#12pmos@6_poly-left##3 CLK_C17530#13pin@82_polysilicon-1 9.92
+R57 CLK_C17530#13pin@82_polysilicon-1 CLK_C17530#13pin@82_polysilicon-1##0 7.75
+R58 CLK_C17530#13pin@82_polysilicon-1##0 CLK_C17530#13pin@82_polysilicon-1##1 7.75
+R59 CLK_C17530#13pin@82_polysilicon-1##1 CLK_C17530#14nmos@6_poly-right 7.75
+R60 CLK_C17530#13pin@82_polysilicon-1 CLK_C17530#13pin@82_polysilicon-1##0 6.717
+R61 CLK_C17530#13pin@82_polysilicon-1##0 CLK_C17530#13pin@82_polysilicon-1##1 6.717
+R62 CLK_C17530#13pin@82_polysilicon-1##1 CLK_C17530 6.717
+R63 net@8#15pmos@7_poly-left net@8#15pmos@7_poly-left##0 9.92
+R64 net@8#15pmos@7_poly-left##0 net@8#15pmos@7_poly-left##1 9.92
+R65 net@8#15pmos@7_poly-left##1 net@8#15pmos@7_poly-left##2 9.92
+R66 net@8#15pmos@7_poly-left##2 net@8#15pmos@7_poly-left##3 9.92
+R67 net@8#15pmos@7_poly-left##3 net@8#16pin@94_polysilicon-1 9.92
+R68 net@8#16pin@94_polysilicon-1 net@8#16pin@94_polysilicon-1##0 7.75
+R69 net@8#16pin@94_polysilicon-1##0 net@8#16pin@94_polysilicon-1##1 7.75
+R70 net@8#16pin@94_polysilicon-1##1 net@8#17nmos@7_poly-right 7.75
+R71 net@8#16pin@94_polysilicon-1 net@8#16pin@94_polysilicon-1##0 6.717
+R72 net@8#16pin@94_polysilicon-1##0 net@8#16pin@94_polysilicon-1##1 6.717
+R73 net@8#16pin@94_polysilicon-1##1 net@8 6.717
+R74 net@62#12pmos@8_poly-left net@62#12pmos@8_poly-left##0 9.3
+R75 net@62#12pmos@8_poly-left##0 net@62#12pmos@8_poly-left##1 9.3
+R76 net@62#12pmos@8_poly-left##1 net@62#13pin@106_polysilicon-1 9.3
+R77 net@217 net@217##0 7.75
+R78 net@217##0 net@217##1 7.75
+R79 net@217##1 net@217#1pin@143_polysilicon-1 7.75
+R80 net@217#1pin@143_polysilicon-1 net@217#1pin@143_polysilicon-1##0 9.92
+R81 net@217#1pin@143_polysilicon-1##0 net@217#1pin@143_polysilicon-1##1 9.92
+R82 net@217#1pin@143_polysilicon-1##1 net@217#1pin@143_polysilicon-1##2 9.92
+R83 net@217#1pin@143_polysilicon-1##2 net@217#1pin@143_polysilicon-1##3 9.92
+R84 net@217#1pin@143_polysilicon-1##3 net@217#2nmos@12_poly-right 9.92
+R85 net@217#1pin@143_polysilicon-1 net@217#1pin@143_polysilicon-1##0 6.717
+R86 net@217#1pin@143_polysilicon-1##0 net@217#1pin@143_polysilicon-1##1 6.717
+R87 net@217#1pin@143_polysilicon-1##1 net@217#3contact@94_metal-1-polysilicon-1 6.717
+R88 net@62#13pin@106_polysilicon-1 net@62#13pin@106_polysilicon-1##0 8.99
+R89 net@62#13pin@106_polysilicon-1##0 net@62#13pin@106_polysilicon-1##1 8.99
+R90 net@62#13pin@106_polysilicon-1##1 net@62#13pin@106_polysilicon-1##2 8.99
+R91 net@62#13pin@106_polysilicon-1##2 net@62#13pin@106_polysilicon-1##3 8.99
+R92 net@62#13pin@106_polysilicon-1##3 net@62#14nmos@8_poly-right 8.99
+R93 net@62#13pin@106_polysilicon-1 net@62#13pin@106_polysilicon-1##0 6.717
+R94 net@62#13pin@106_polysilicon-1##0 net@62#13pin@106_polysilicon-1##1 6.717
+R95 net@62#13pin@106_polysilicon-1##1 net@62#3contact@24_metal-1-polysilicon-1 6.717
+R96 net@190 net@190##0 8.525
+R97 net@190##0 net@190#10nmos@9_poly-right 8.525
+R98 net@167 net@167##0 8.525
+R99 net@167##0 net@167#8pmos@9_poly-left 8.525
+R100 Q_C17530#7pmos@10_poly-left Q_C17530#7pmos@10_poly-left##0 9.92
+R101 Q_C17530#7pmos@10_poly-left##0 Q_C17530#7pmos@10_poly-left##1 9.92
+R102 Q_C17530#7pmos@10_poly-left##1 Q_C17530#7pmos@10_poly-left##2 9.92
+R103 Q_C17530#7pmos@10_poly-left##2 Q_C17530#7pmos@10_poly-left##3 9.92
+R104 Q_C17530#7pmos@10_poly-left##3 Q_C17530#8pin@126_polysilicon-1 9.92
+R105 Q_C17530#8pin@126_polysilicon-1 Q_C17530#8pin@126_polysilicon-1##0 7.75
+R106 Q_C17530#8pin@126_polysilicon-1##0 Q_C17530#8pin@126_polysilicon-1##1 7.75
+R107 Q_C17530#8pin@126_polysilicon-1##1 Q_C17530#9nmos@10_poly-right 7.75
+R108 Q_C17530#8pin@126_polysilicon-1 Q_C17530#8pin@126_polysilicon-1##0 6.717
+R109 Q_C17530#8pin@126_polysilicon-1##0 Q_C17530#8pin@126_polysilicon-1##1 6.717
+R110 Q_C17530#8pin@126_polysilicon-1##1 Q_C17530 6.717
+R111 net@167 net@167##0 8.525
+R112 net@167##0 net@167#9nmos@11_poly-right 8.525
+R113 net@190 net@190##0 8.525
+R114 net@190##0 net@190#11pmos@11_poly-left 8.525
+.ENDS IE0311_C17530_I2025__FF_D_POS_C17530
+
+*** TOP LEVEL CELL: FF_D_POS_C17530_sim{lay}
+XFF_D_POS@0 clk ind gnd outq vdd IE0311_C17530_I2025__FF_D_POS_C17530
+** Extracted Parasitic Capacitors ***
+C0 clk 0 0.984fF
+C1 ind 0 0.508fF
+C2 outq 0 1.143fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'FF_D_POS_C17530_sim{lay}'
+.include /home/ragnarok/Desktop/ie0311/lab04/spice.txt
+* Fuentes de poder
+VDD vdd 0 DC 5
+VGND gnd 0 DC 0
+* Señal de entrada de datos (ind)
+VIND ind 0 PULSE(0 5 2n 0.1n 0.1n 5n 15n)
+* Señal de reloj (clk)
+VCLK clk 0 PULSE(0 5 4n 0.1n 0.1n 5n 10n)
+* Análisis Transitorio - Funcion tiempo
+.tran 0 40n
+.END

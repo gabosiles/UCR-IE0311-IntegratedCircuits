@@ -1,0 +1,116 @@
+*** SPICE deck for cell INV_20_10_C17530_sim{lay} from library IE0311_C17530_I2025
+*** Created on Sat May 10, 2025 21:30:10
+*** Last revised on Sat May 10, 2025 23:01:57
+*** Written on Sat May 10, 2025 23:02:59 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT IE0311_C17530_I2025__INV_10_10_C17530 FROM CELL INV_10_10_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__INV_10_10_C17530 A_C17530 gnd vdd Y_C17530
+Mnmos@0 Y_C17530 A_C17530#2nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=2.2P PS=16.6U PD=6.2U
+Mpmos@0 Y_C17530 A_C17530#0pmos@0_poly-left vdd vdd PMOS L=0.4U W=2U AS=7.2P AD=2.2P PS=16.8U PD=6.2U
+** Extracted Parasitic Capacitors ***
+C0 Y_C17530 0 2.921fF
+C1 A_C17530#1pin@12_polysilicon-1 0 0.233fF
+** Extracted Parasitic Resistors ***
+R0 A_C17530#0pmos@0_poly-left A_C17530#0pmos@0_poly-left##0 9.3
+R1 A_C17530#0pmos@0_poly-left##0 A_C17530#0pmos@0_poly-left##1 9.3
+R2 A_C17530#0pmos@0_poly-left##1 A_C17530#0pmos@0_poly-left##2 9.3
+R3 A_C17530#0pmos@0_poly-left##2 A_C17530#0pmos@0_poly-left##3 9.3
+R4 A_C17530#0pmos@0_poly-left##3 A_C17530#0pmos@0_poly-left##4 9.3
+R5 A_C17530#0pmos@0_poly-left##4 A_C17530#0pmos@0_poly-left##5 9.3
+R6 A_C17530#0pmos@0_poly-left##5 A_C17530#1pin@12_polysilicon-1 9.3
+R7 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 8.525
+R8 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 8.525
+R9 A_C17530#1pin@12_polysilicon-1##1 A_C17530#1pin@12_polysilicon-1##2 8.525
+R10 A_C17530#1pin@12_polysilicon-1##2 A_C17530#2nmos@0_poly-right 8.525
+R11 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 6.717
+R12 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 6.717
+R13 A_C17530#1pin@12_polysilicon-1##1 A_C17530 6.717
+.ENDS IE0311_C17530_I2025__INV_10_10_C17530
+
+*** SUBCIRCUIT IE0311_C17530_I2025__INV_15_05_C17530 FROM CELL INV_15_05_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__INV_15_05_C17530 A_C17530 gnd vdd Y_C17530
+Mnmos@0 Y_C17530 A_C17530#2nmos@0_poly-right gnd gnd NMOS L=0.4U W=1U AS=5.9P AD=2.2P PS=14.6U PD=6.2U
+Mpmos@0 Y_C17530 A_C17530#0pmos@0_poly-left vdd vdd PMOS L=0.4U W=3U AS=8.4P AD=2.2P PS=18.8U PD=6.2U
+** Extracted Parasitic Capacitors ***
+C0 Y_C17530 0 2.858fF
+C1 A_C17530#1pin@12_polysilicon-1 0 0.251fF
+** Extracted Parasitic Resistors ***
+R0 A_C17530#0pmos@0_poly-left A_C17530#0pmos@0_poly-left##0 9.92
+R1 A_C17530#0pmos@0_poly-left##0 A_C17530#0pmos@0_poly-left##1 9.92
+R2 A_C17530#0pmos@0_poly-left##1 A_C17530#0pmos@0_poly-left##2 9.92
+R3 A_C17530#0pmos@0_poly-left##2 A_C17530#0pmos@0_poly-left##3 9.92
+R4 A_C17530#0pmos@0_poly-left##3 A_C17530#1pin@12_polysilicon-1 9.92
+R5 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 9.92
+R6 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 9.92
+R7 A_C17530#1pin@12_polysilicon-1##1 A_C17530#1pin@12_polysilicon-1##2 9.92
+R8 A_C17530#1pin@12_polysilicon-1##2 A_C17530#1pin@12_polysilicon-1##3 9.92
+R9 A_C17530#1pin@12_polysilicon-1##3 A_C17530#2nmos@0_poly-right 9.92
+R10 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 6.717
+R11 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 6.717
+R12 A_C17530#1pin@12_polysilicon-1##1 A_C17530 6.717
+.ENDS IE0311_C17530_I2025__INV_15_05_C17530
+
+*** SUBCIRCUIT IE0311_C17530_I2025__INV_20_10_C17530 FROM CELL INV_20_10_C17530{lay}
+.SUBCKT IE0311_C17530_I2025__INV_20_10_C17530 A_C17530 gnd vdd Y_C17530
+Mnmos@0 Y_C17530 A_C17530#2nmos@0_poly-right gnd gnd NMOS L=0.4U W=2U AS=7P AD=3.3P PS=16.6U PD=8.2U
+Mpmos@0 Y_C17530 A_C17530#0pmos@0_poly-left vdd vdd PMOS L=0.4U W=4U AS=9.6P AD=3.3P PS=20.8U PD=8.2U
+** Extracted Parasitic Capacitors ***
+C0 Y_C17530 0 2.699fF
+C1 A_C17530#1pin@12_polysilicon-1 0 0.228fF
+** Extracted Parasitic Resistors ***
+R0 A_C17530#0pmos@0_poly-left A_C17530#0pmos@0_poly-left##0 9.688
+R1 A_C17530#0pmos@0_poly-left##0 A_C17530#0pmos@0_poly-left##1 9.688
+R2 A_C17530#0pmos@0_poly-left##1 A_C17530#0pmos@0_poly-left##2 9.688
+R3 A_C17530#0pmos@0_poly-left##2 A_C17530#1pin@12_polysilicon-1 9.688
+R4 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 8.525
+R5 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 8.525
+R6 A_C17530#1pin@12_polysilicon-1##1 A_C17530#1pin@12_polysilicon-1##2 8.525
+R7 A_C17530#1pin@12_polysilicon-1##2 A_C17530#2nmos@0_poly-right 8.525
+R8 A_C17530#1pin@12_polysilicon-1 A_C17530#1pin@12_polysilicon-1##0 6.717
+R9 A_C17530#1pin@12_polysilicon-1##0 A_C17530#1pin@12_polysilicon-1##1 6.717
+R10 A_C17530#1pin@12_polysilicon-1##1 A_C17530 6.717
+.ENDS IE0311_C17530_I2025__INV_20_10_C17530
+
+*** TOP LEVEL CELL: INV_20_10_C17530_sim{lay}
+XINV_10_1@0 vin gnd vdd Vout_INV_10_10 IE0311_C17530_I2025__INV_10_10_C17530
+XINV_15_0@0 vin gnd vdd Vout_INV_15_05 IE0311_C17530_I2025__INV_15_05_C17530
+XINV_20_1@0 vin gnd vdd Vout_INV_20_10 IE0311_C17530_I2025__INV_20_10_C17530
+** Extracted Parasitic Capacitors ***
+C0 vin 0 1.334fF
+C1 Vout_INV_10_10 0 1.27fF
+C2 vin 0 1.016fF
+C3 Vout_INV_15_05 0 1.397fF
+C4 vin 0 1.842fF
+C5 Vout_INV_20_10 0 1.683fF
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'INV_20_10_C17530_sim{lay}'
+.include /home/ragnarok/Desktop/ie0311/lab02/spice.txt 
+* Fuentes de alimentación
+VGND gnd 0 DC 0 
+VDD vdd 0 DC 5
+VIN vin 0 DC 0
+* Análisis DC - Barrido de entrada VIN de 0 a 5 V
+.DC VIN 0 5 1m
+.END
